@@ -1,7 +1,9 @@
 .idea/
 .settings/
 bin/
+build/
 target/
+work/
 
 .classpath
 .project
