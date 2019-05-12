@@ -6,9 +6,10 @@ before_script:
 
 jobs:
   include:
-    - env: project='000-a'
-    - env: project='001-abc'
-    - env: project='010-mr-a'
-    - env: project='011-mr-abc'
+    - env: project='000-main(a)'
+    - env: project='001-main(abc)'
+    - env: project='010-main(mr(a))'
+    - env: project='011-main(mr(a)bc)'
+    - env: project='050-main(a)-test(i)'
 
 script: cd ${project} && java -Debug=true ../Make.java
