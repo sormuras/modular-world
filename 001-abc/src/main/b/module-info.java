@@ -1,5 +1,5 @@
 module b {
-  requires a;
+  requires transitive a;
 
   exports b;
 }
