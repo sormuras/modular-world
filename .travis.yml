@@ -1,0 +1,11 @@
+language: java
+
+before_script:
+  - wget https://github.com/sormuras/make-java/raw/master/src/main/Make.java
+
+jobs:
+  include:
+    - script: cd 000-a      && java Make.java
+    - script: cd 001-abc    && java Make.java
+    - script: cd 010-mr-a   && java Make.java
+    - script: cd 011-mr-abc && java Make.java
