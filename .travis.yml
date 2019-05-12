@@ -1,3 +1,4 @@
+dist: xenial
 language: java
 
 before_script:
@@ -5,7 +6,9 @@ before_script:
 
 jobs:
   include:
-    - script: cd 000-a      && java Make.java
-    - script: cd 001-abc    && java Make.java
-    - script: cd 010-mr-a   && java Make.java
-    - script: cd 011-mr-abc && java Make.java
+    - env: project='000-a'
+    - env: project='001-abc'
+    - env: project='010-mr-a'
+    - env: project='011-mr-abc'
+
+script: cd ${project} && java -Debug=true Make.java
