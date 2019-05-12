@@ -11,4 +11,4 @@ jobs:
     - env: project='010-mr-a'
     - env: project='011-mr-abc'
 
-script: cd ${project} && java -Debug=true Make.java
+script: cd ${project} && java -Debug=true ../Make.java
