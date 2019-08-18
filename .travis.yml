@@ -1,15 +1,12 @@
 dist: xenial
 language: java
 
-before_script:
-  - wget https://github.com/sormuras/make-java/raw/master/src/main/Make.java
-
 jobs:
   include:
     - env: project='000-main(a)'
     - env: project='001-main(abc)'
-    - env: project='010-main(mr(a))'
-    - env: project='011-main(mr(a)bc)'
-    # - env: project='050-main(a)-test(i)'
+    # - env: project='010-main(mr(a))'
+    # - env: project='011-main(mr(a)bc)'
+    - env: project='050-main(a)-test(i)'
 
-script: cd ${project} && java -Debug=true ../Make.java
+script: cd ${project} && jshell build.jsh
