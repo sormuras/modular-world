@@ -8,3 +8,4 @@ work/
 .classpath
 .project
 *.iml
+*.jar
