@@ -10,5 +10,6 @@ var modulePath = String.join(File.pathSeparator, "bin", "lib")
 
 run("javac", "--module=a,i", "--module-path=lib", "--module-source-path=" + sourcePath, "-d", "bin")
 run("jdeps", "--add-modules=a,i", "--module-path=" + modulePath, "--multi-release=base", "-summary")
+run("jdeps", "--check=a,i", "--module-path=" + modulePath, "--multi-release=base")
 
 /exit
