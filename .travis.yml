@@ -6,7 +6,7 @@ jobs:
     - env: project='000-main(a)'
     - env: project='001-main(abc)'
     - env: project='010-main(mr(a))'
-    # - env: project='011-main(mr(a)bc)'
+    - env: project='011-main(mr(a)bc)'
     - env: project='050-main(a)-test(i)'
 
 script: cd ${project} && jshell build.jsh
