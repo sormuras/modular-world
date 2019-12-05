@@ -9,3 +9,4 @@ jobs:
       with:
         java-version: 11
     - run: cd 'jigsaw-quick-start-greetings' && jshell https://bit.ly/bach-jsh
+    - run: cd 'jigsaw-quick-start-greetings-world' && jshell https://bit.ly/bach-jsh

@@ -9,4 +9,4 @@ jobs:
       with:
         java-version: 11
     - run: cd 'jigsaw-quick-start-greetings' && jshell build.jsh
-    - run: cd '000-main(a)' && jshell build.jsh
+    - run: cd 'jigsaw-quick-start-greetings-world' && jshell build.jsh

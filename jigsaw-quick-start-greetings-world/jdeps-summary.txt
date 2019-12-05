@@ -1,0 +1,3 @@
+com.greetings -> java.base
+com.greetings -> org.astro
+org.astro -> java.base
