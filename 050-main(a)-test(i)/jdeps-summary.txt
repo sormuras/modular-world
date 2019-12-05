@@ -1,1 +1,4 @@
 a -> java.base
+i -> a
+i -> java.base
+i -> org.junit.jupiter.api

@@ -8,5 +8,6 @@ jobs:
     - uses: actions/setup-java@v1
       with:
         java-version: 11
+    - run: cd '050-main(a)-test(i)' && jshell build.jsh
     - run: cd 'jigsaw-quick-start-greetings' && jshell build.jsh
     - run: cd 'jigsaw-quick-start-greetings-world' && jshell build.jsh
